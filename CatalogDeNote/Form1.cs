@@ -46,5 +46,10 @@ namespace CatalogDeNote
         {
 
         }
+
+        private void studentibtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
