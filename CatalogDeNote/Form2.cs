@@ -31,5 +31,24 @@ namespace CatalogDeNote
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iesirebtn_Click(object sender, EventArgs e)
+        {
+            mainform window = new mainform();
+            this.Hide();
+            window.ShowDialog();
+        }
+
+        private void iesirebtn_Click_1(object sender, EventArgs e)
+        {
+            mainform window = new mainform();
+            this.Hide();
+            window.ShowDialog();
+        }
     }
 }

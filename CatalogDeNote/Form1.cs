@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CatalogDeNote
 {
-    public partial class Form1 : MaterialSkin.Controls.MaterialForm
+    public partial class mainform : MaterialSkin.Controls.MaterialForm
     {
-        public Form1()
+        public mainform()
         {
             InitializeComponent();
         }
@@ -23,11 +23,6 @@ namespace CatalogDeNote
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
         {
 
         }
@@ -49,7 +44,21 @@ namespace CatalogDeNote
 
         private void studentibtn_Click(object sender, EventArgs e)
         {
+            studentiform studenti = new studentiform();
+            this.Hide();
+            studenti.ShowDialog();
+        }
 
+        private void disciplinebtn_Click(object sender, EventArgs e)
+        {
+            disciplinaform disciplina = new disciplinaform();
+            this.Hide();
+            disciplina.ShowDialog();
+        }
+
+        private void iesirebtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

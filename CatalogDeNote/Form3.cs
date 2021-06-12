@@ -12,7 +12,7 @@ namespace CatalogDeNote
 {
     public partial class disciplinaform : MaterialSkin.Controls.MaterialForm
     {
-        public disciplineform()
+        public disciplinaform()
         {
             InitializeComponent();
         }
@@ -40,6 +40,23 @@ namespace CatalogDeNote
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void denumiretxt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void creditetxt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iesirebtn_Click(object sender, EventArgs e)
+        {
+            mainform window = new mainform();
+            this.Hide();
+            window.ShowDialog();
         }
     }
 }
