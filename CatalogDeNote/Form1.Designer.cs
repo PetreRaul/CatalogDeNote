@@ -113,7 +113,7 @@ namespace CatalogDeNote
             this.iesirebtn.ForeColor = System.Drawing.Color.White;
             this.iesirebtn.Image = ((System.Drawing.Image)(resources.GetObject("iesirebtn.Image")));
             this.iesirebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iesirebtn.Location = new System.Drawing.Point(13, 365);
+            this.iesirebtn.Location = new System.Drawing.Point(13, 340);
             this.iesirebtn.Name = "iesirebtn";
             this.iesirebtn.Size = new System.Drawing.Size(142, 40);
             this.iesirebtn.TabIndex = 6;

@@ -37,17 +37,36 @@ namespace CatalogDeNote
 
         }
 
-        private void iesirebtn_Click(object sender, EventArgs e)
+
+        private void denumiretxt_Click(object sender, EventArgs e)
         {
-            mainform window = new mainform();
-            this.Hide();
-            window.ShowDialog();
+
         }
 
-        private void iesirebtn_Click_1(object sender, EventArgs e)
+        private void codtxt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void creditetxt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iesirebtn_Click_2(object sender, EventArgs e)
         {
             mainform window = new mainform();
-            this.Hide();
+            this.Close();
             window.ShowDialog();
         }
     }

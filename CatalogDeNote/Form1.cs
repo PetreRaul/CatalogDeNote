@@ -24,7 +24,9 @@ namespace CatalogDeNote
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Catalog window = new Catalog();
+            this.Hide();
+            window.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -58,7 +60,7 @@ namespace CatalogDeNote
 
         private void iesirebtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
