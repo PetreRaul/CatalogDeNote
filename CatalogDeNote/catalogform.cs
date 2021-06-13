@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CatalogDeNote
 {
-    public partial class Catalog : MaterialSkin.Controls.MaterialForm
+    public partial class catalogform : MaterialSkin.Controls.MaterialForm
     {
-        public Catalog()
+        public catalogform()
         {
             InitializeComponent();
         }

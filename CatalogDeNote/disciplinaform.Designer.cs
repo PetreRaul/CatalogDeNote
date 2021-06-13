@@ -35,7 +35,6 @@ namespace CatalogDeNote
             System.Windows.Forms.Button adaugarebtn;
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.denumiretxt = new System.Windows.Forms.Label();
             this.creditetxt = new System.Windows.Forms.Label();
             this.codtxt = new System.Windows.Forms.Label();
@@ -44,13 +43,14 @@ namespace CatalogDeNote
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.listadiscipline = new System.Windows.Forms.ListBox();
+            this.clasadisclipine = new System.Windows.Forms.GroupBox();
             iesirebtn = new System.Windows.Forms.Button();
             stergerebtn = new System.Windows.Forms.Button();
             modificarebtn = new System.Windows.Forms.Button();
             adaugarebtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.clasadisclipine.SuspendLayout();
             this.SuspendLayout();
             // 
             // iesirebtn
@@ -130,21 +130,11 @@ namespace CatalogDeNote
             this.panel1.Controls.Add(modificarebtn);
             this.panel1.Controls.Add(adaugarebtn);
             this.panel1.ForeColor = System.Drawing.Color.OliveDrab;
-            this.panel1.Location = new System.Drawing.Point(690, 56);
+            this.panel1.Location = new System.Drawing.Point(684, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(221, 415);
+            this.panel1.Size = new System.Drawing.Size(227, 415);
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(276, 48);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(417, 423);
-            this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // denumiretxt
             // 
@@ -152,7 +142,7 @@ namespace CatalogDeNote
             this.denumiretxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.denumiretxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.denumiretxt.ForeColor = System.Drawing.Color.Black;
-            this.denumiretxt.Location = new System.Drawing.Point(327, 100);
+            this.denumiretxt.Location = new System.Drawing.Point(43, 33);
             this.denumiretxt.Name = "denumiretxt";
             this.denumiretxt.Size = new System.Drawing.Size(149, 25);
             this.denumiretxt.TabIndex = 12;
@@ -166,7 +156,7 @@ namespace CatalogDeNote
             this.creditetxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.creditetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creditetxt.ForeColor = System.Drawing.Color.Black;
-            this.creditetxt.Location = new System.Drawing.Point(327, 166);
+            this.creditetxt.Location = new System.Drawing.Point(43, 99);
             this.creditetxt.Name = "creditetxt";
             this.creditetxt.Size = new System.Drawing.Size(124, 18);
             this.creditetxt.TabIndex = 13;
@@ -180,7 +170,7 @@ namespace CatalogDeNote
             this.codtxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.codtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codtxt.ForeColor = System.Drawing.Color.Black;
-            this.codtxt.Location = new System.Drawing.Point(327, 226);
+            this.codtxt.Location = new System.Drawing.Point(43, 159);
             this.codtxt.Name = "codtxt";
             this.codtxt.Size = new System.Drawing.Size(124, 21);
             this.codtxt.TabIndex = 14;
@@ -190,7 +180,7 @@ namespace CatalogDeNote
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(327, 128);
+            this.textBox1.Location = new System.Drawing.Point(43, 61);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(193, 20);
             this.textBox1.TabIndex = 15;
@@ -198,7 +188,7 @@ namespace CatalogDeNote
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(327, 250);
+            this.textBox2.Location = new System.Drawing.Point(43, 183);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(83, 20);
             this.textBox2.TabIndex = 16;
@@ -207,7 +197,7 @@ namespace CatalogDeNote
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(327, 187);
+            this.comboBox1.Location = new System.Drawing.Point(43, 120);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(149, 21);
             this.comboBox1.TabIndex = 17;
@@ -232,6 +222,21 @@ namespace CatalogDeNote
             this.listadiscipline.TabIndex = 2;
             this.listadiscipline.SelectedIndexChanged += new System.EventHandler(this.listastudenti_SelectedIndexChanged);
             // 
+            // clasadisclipine
+            // 
+            this.clasadisclipine.BackColor = System.Drawing.Color.LightGray;
+            this.clasadisclipine.Controls.Add(this.comboBox1);
+            this.clasadisclipine.Controls.Add(this.textBox2);
+            this.clasadisclipine.Controls.Add(this.textBox1);
+            this.clasadisclipine.Controls.Add(this.codtxt);
+            this.clasadisclipine.Controls.Add(this.creditetxt);
+            this.clasadisclipine.Controls.Add(this.denumiretxt);
+            this.clasadisclipine.Location = new System.Drawing.Point(276, 59);
+            this.clasadisclipine.Name = "clasadisclipine";
+            this.clasadisclipine.Size = new System.Drawing.Size(409, 410);
+            this.clasadisclipine.TabIndex = 19;
+            this.clasadisclipine.TabStop = false;
+            // 
             // disciplinaform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,31 +245,24 @@ namespace CatalogDeNote
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(906, 470);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.clasadisclipine);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.codtxt);
-            this.Controls.Add(this.creditetxt);
-            this.Controls.Add(this.denumiretxt);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
             this.MaximizeBox = false;
             this.Name = "disciplinaform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.disciplineform_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.clasadisclipine.ResumeLayout(false);
+            this.clasadisclipine.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label denumiretxt;
         private System.Windows.Forms.Label creditetxt;
         private System.Windows.Forms.Label codtxt;
@@ -273,5 +271,6 @@ namespace CatalogDeNote
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ListBox listadiscipline;
+        private System.Windows.Forms.GroupBox clasadisclipine;
     }
 }

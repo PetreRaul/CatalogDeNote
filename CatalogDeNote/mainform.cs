@@ -24,7 +24,7 @@ namespace CatalogDeNote
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Catalog window = new Catalog();
+            catalogform window = new catalogform();
             this.Hide();
             window.Show();
         }
