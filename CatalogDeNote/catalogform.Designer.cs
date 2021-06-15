@@ -57,7 +57,7 @@ namespace CatalogDeNote
             iesirebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             iesirebtn.FlatAppearance.BorderSize = 0;
             iesirebtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
-            iesirebtn.ForeColor = System.Drawing.Color.Black;
+            iesirebtn.ForeColor = System.Drawing.Color.White;
             iesirebtn.Image = ((System.Drawing.Image)(resources.GetObject("iesirebtn.Image")));
             iesirebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             iesirebtn.Location = new System.Drawing.Point(18, 306);
@@ -65,7 +65,7 @@ namespace CatalogDeNote
             iesirebtn.Size = new System.Drawing.Size(142, 40);
             iesirebtn.TabIndex = 5;
             iesirebtn.TabStop = false;
-            iesirebtn.Text = "IESIRE";
+            iesirebtn.Text = "Ieșire";
             iesirebtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             iesirebtn.UseVisualStyleBackColor = false;
             iesirebtn.Click += new System.EventHandler(this.iesirebtn_Click);
@@ -75,7 +75,7 @@ namespace CatalogDeNote
             stergerebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             stergerebtn.FlatAppearance.BorderSize = 0;
             stergerebtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
-            stergerebtn.ForeColor = System.Drawing.Color.Black;
+            stergerebtn.ForeColor = System.Drawing.Color.White;
             stergerebtn.Image = ((System.Drawing.Image)(resources.GetObject("stergerebtn.Image")));
             stergerebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             stergerebtn.Location = new System.Drawing.Point(18, 169);
@@ -83,7 +83,7 @@ namespace CatalogDeNote
             stergerebtn.Size = new System.Drawing.Size(142, 40);
             stergerebtn.TabIndex = 4;
             stergerebtn.TabStop = false;
-            stergerebtn.Text = "STERGERE";
+            stergerebtn.Text = "Ștergere";
             stergerebtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             stergerebtn.UseVisualStyleBackColor = false;
             stergerebtn.Click += new System.EventHandler(this.stergerebtn_Click_1);
@@ -93,7 +93,7 @@ namespace CatalogDeNote
             adaugarebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             adaugarebtn.FlatAppearance.BorderSize = 0;
             adaugarebtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
-            adaugarebtn.ForeColor = System.Drawing.Color.Black;
+            adaugarebtn.ForeColor = System.Drawing.Color.White;
             adaugarebtn.Image = ((System.Drawing.Image)(resources.GetObject("adaugarebtn.Image")));
             adaugarebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             adaugarebtn.Location = new System.Drawing.Point(18, 109);
@@ -101,7 +101,7 @@ namespace CatalogDeNote
             adaugarebtn.Size = new System.Drawing.Size(142, 40);
             adaugarebtn.TabIndex = 2;
             adaugarebtn.TabStop = false;
-            adaugarebtn.Text = "SALVARE";
+            adaugarebtn.Text = "Salvare";
             adaugarebtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             adaugarebtn.UseVisualStyleBackColor = false;
             adaugarebtn.Click += new System.EventHandler(this.adaugarebtn_Click);

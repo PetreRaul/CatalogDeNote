@@ -36,6 +36,7 @@ namespace CatalogDeNote
             this.iesirebtn = new System.Windows.Forms.Button();
             this.disciplinebtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.raportbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +81,7 @@ namespace CatalogDeNote
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(93)))), ((int)(((byte)(152)))));
+            this.panel1.Controls.Add(this.raportbtn);
             this.panel1.Controls.Add(this.iesirebtn);
             this.panel1.Controls.Add(this.disciplinebtn);
             this.panel1.Controls.Add(this.catalogbtn);
@@ -134,6 +136,24 @@ namespace CatalogDeNote
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // raportbtn
+            // 
+            this.raportbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            this.raportbtn.FlatAppearance.BorderSize = 0;
+            this.raportbtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
+            this.raportbtn.ForeColor = System.Drawing.Color.White;
+            this.raportbtn.Image = ((System.Drawing.Image)(resources.GetObject("raportbtn.Image")));
+            this.raportbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.raportbtn.Location = new System.Drawing.Point(12, 227);
+            this.raportbtn.Name = "raportbtn";
+            this.raportbtn.Size = new System.Drawing.Size(142, 40);
+            this.raportbtn.TabIndex = 7;
+            this.raportbtn.TabStop = false;
+            this.raportbtn.Text = "Raport";
+            this.raportbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.raportbtn.UseVisualStyleBackColor = false;
+            this.raportbtn.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // mainform
             // 
             this.ClientSize = new System.Drawing.Size(906, 470);
@@ -161,6 +181,7 @@ namespace CatalogDeNote
         private System.Windows.Forms.Button disciplinebtn;
         private System.Windows.Forms.Button iesirebtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button raportbtn;
     }
 }
 

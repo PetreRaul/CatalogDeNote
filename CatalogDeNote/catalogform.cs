@@ -88,7 +88,7 @@ namespace CatalogDeNote
                     cmd = new SqlCommand("insert into catalog_note values('" + disciplinaselectata + "', '" + studentselectat + "', '" + noteadd.Text + "', '0')", conectare.DeschidereConectare());
                     cmd.ExecuteNonQuery();
                     noteload();
-                    MessageBox.Show("Nota a fost adaugata");
+                    MessageBox.Show("Nota a fost adăugată");
                 }
                 else
                 {
@@ -160,7 +160,7 @@ namespace CatalogDeNote
                 cmd = new SqlCommand("UPDATE catalog_note SET sters=1 WHERE cod_disciplina='" + disciplinaselectata + "' AND nr_matricol='" + studentselectat + "'AND nota='" + notaselectata + "'", conectare.DeschidereConectare());
                 cmd.ExecuteNonQuery();
                 noteload();
-                MessageBox.Show("Nota a fost stearsa");
+                MessageBox.Show("Nota a fost ștearsă");
             }
             catch (Exception)
             {
