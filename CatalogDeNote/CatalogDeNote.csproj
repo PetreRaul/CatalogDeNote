@@ -55,6 +55,7 @@
     <Compile Include="catalogform.Designer.cs">
       <DependentUpon>catalogform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Conectare.cs" />
     <Compile Include="mainform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +78,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="catalogform.resx">
       <DependentUpon>catalogform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform.dje.resx">
+      <DependentUpon>mainform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
       <DependentUpon>mainform.cs</DependentUpon>

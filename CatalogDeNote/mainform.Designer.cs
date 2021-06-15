@@ -33,16 +33,18 @@ namespace CatalogDeNote
             this.studentibtn = new System.Windows.Forms.Button();
             this.catalogbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.disciplinebtn = new System.Windows.Forms.Button();
             this.iesirebtn = new System.Windows.Forms.Button();
+            this.disciplinebtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // studentibtn
             // 
             this.studentibtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.studentibtn.FlatAppearance.BorderSize = 0;
-            this.studentibtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentibtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.studentibtn.ForeColor = System.Drawing.Color.White;
             this.studentibtn.Image = ((System.Drawing.Image)(resources.GetObject("studentibtn.Image")));
             this.studentibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -61,7 +63,7 @@ namespace CatalogDeNote
             this.catalogbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.catalogbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.catalogbtn.FlatAppearance.BorderSize = 0;
-            this.catalogbtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.catalogbtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.catalogbtn.ForeColor = System.Drawing.Color.White;
             this.catalogbtn.Image = ((System.Drawing.Image)(resources.GetObject("catalogbtn.Image")));
             this.catalogbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -82,34 +84,16 @@ namespace CatalogDeNote
             this.panel1.Controls.Add(this.disciplinebtn);
             this.panel1.Controls.Add(this.catalogbtn);
             this.panel1.Controls.Add(this.studentibtn);
-            this.panel1.Location = new System.Drawing.Point(-1, 62);
+            this.panel1.Location = new System.Drawing.Point(0, 62);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(167, 408);
             this.panel1.TabIndex = 5;
-            // 
-            // disciplinebtn
-            // 
-            this.disciplinebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
-            this.disciplinebtn.FlatAppearance.BorderSize = 0;
-            this.disciplinebtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disciplinebtn.ForeColor = System.Drawing.Color.White;
-            this.disciplinebtn.Image = ((System.Drawing.Image)(resources.GetObject("disciplinebtn.Image")));
-            this.disciplinebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.disciplinebtn.Location = new System.Drawing.Point(13, 157);
-            this.disciplinebtn.Name = "disciplinebtn";
-            this.disciplinebtn.Size = new System.Drawing.Size(142, 40);
-            this.disciplinebtn.TabIndex = 5;
-            this.disciplinebtn.TabStop = false;
-            this.disciplinebtn.Text = "Discipline";
-            this.disciplinebtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.disciplinebtn.UseVisualStyleBackColor = false;
-            this.disciplinebtn.Click += new System.EventHandler(this.disciplinebtn_Click);
             // 
             // iesirebtn
             // 
             this.iesirebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
             this.iesirebtn.FlatAppearance.BorderSize = 0;
-            this.iesirebtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iesirebtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.iesirebtn.ForeColor = System.Drawing.Color.White;
             this.iesirebtn.Image = ((System.Drawing.Image)(resources.GetObject("iesirebtn.Image")));
             this.iesirebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,9 +107,37 @@ namespace CatalogDeNote
             this.iesirebtn.UseVisualStyleBackColor = false;
             this.iesirebtn.Click += new System.EventHandler(this.iesirebtn_Click);
             // 
+            // disciplinebtn
+            // 
+            this.disciplinebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(173)))));
+            this.disciplinebtn.FlatAppearance.BorderSize = 0;
+            this.disciplinebtn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
+            this.disciplinebtn.ForeColor = System.Drawing.Color.White;
+            this.disciplinebtn.Image = ((System.Drawing.Image)(resources.GetObject("disciplinebtn.Image")));
+            this.disciplinebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.disciplinebtn.Location = new System.Drawing.Point(13, 157);
+            this.disciplinebtn.Name = "disciplinebtn";
+            this.disciplinebtn.Size = new System.Drawing.Size(142, 40);
+            this.disciplinebtn.TabIndex = 5;
+            this.disciplinebtn.TabStop = false;
+            this.disciplinebtn.Text = "Discipline";
+            this.disciplinebtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.disciplinebtn.UseVisualStyleBackColor = false;
+            this.disciplinebtn.Click += new System.EventHandler(this.disciplinebtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(167, 62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(739, 408);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // mainform
             // 
             this.ClientSize = new System.Drawing.Size(906, 470);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;
             this.MaximizeBox = false;
@@ -135,6 +147,7 @@ namespace CatalogDeNote
             this.Text = "Catalog Online";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -147,6 +160,7 @@ namespace CatalogDeNote
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button disciplinebtn;
         private System.Windows.Forms.Button iesirebtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

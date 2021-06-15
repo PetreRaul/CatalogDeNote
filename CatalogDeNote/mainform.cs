@@ -28,39 +28,33 @@ namespace CatalogDeNote
             this.Hide();
             window.Show();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void studentibtn_Click(object sender, EventArgs e)
         {
-            studentiform studenti = new studentiform();
+            studentiform window = new studentiform();
             this.Hide();
-            studenti.ShowDialog();
+            window.ShowDialog();
         }
 
         private void disciplinebtn_Click(object sender, EventArgs e)
         {
-            disciplinaform disciplina = new disciplinaform();
+            disciplinaform window = new disciplinaform();
             this.Hide();
-            disciplina.ShowDialog();
+            window.ShowDialog();
         }
 
         private void iesirebtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show("Ești sigur că vrei să ieși? ", "Exit", buttons, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
